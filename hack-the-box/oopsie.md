@@ -1,5 +1,3 @@
-<img width="308" height="149" alt="image" src="https://github.com/user-attachments/assets/fee81abe-94cc-4f6a-9c6f-c0526058990c" />
-
 ---
 Title: "Oopsie HTB Walkthrough"
 Date: 24th November 2026
@@ -12,6 +10,9 @@ Tags:
 Platform: "Hack The Box, Starting Point Tier 1"
 Difficulty: "Easy (Starting Point Tier 1)"
 ---
+
+<img width="308" height="149" alt="image" src="https://github.com/user-attachments/assets/f1d086a8-29fa-4110-b7fb-f0c372349638" />
+
 
 ## Summary
 
