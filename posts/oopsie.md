@@ -30,7 +30,7 @@ Nmap scan report for <TARGET_IP>
 80/tcp open  http  Apache httpd 2.4.29 (Ubuntu)
 ```
 
-<img width="1447" height="851" alt="0" src="https://github.com/user-attachments/assets/242dc5ae-679e-4be3-8c3f-1eb005aae040" />
+<img width="1447" height="851" alt="0" src="https://github.com/user-attachments/assets/3b0de19e-5384-4fbc-8626-ea22c1a14267" />
 
 
 **Why it mattered:** The results identified the web service to inspect and SSH as another exposed service.
@@ -41,7 +41,7 @@ Nmap scan report for <TARGET_IP>
 
 **What the output showed:** A script tag disclosed `/cdn-cgi/login/`, which was not linked from the visible page.
 
-<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/9c85bbf0-d966-4555-8e53-f8638ddf8ddd" />
+<img width="1920" height="1080" alt="1" src="https://github.com/user-attachments/assets/642d274a-b8a9-478a-ad7a-25e52e0576cc" />
 
 
 **Why it worked:** Reviewing the source exposed a login path that normal page navigation did not reveal.
@@ -54,7 +54,7 @@ Nmap scan report for <TARGET_IP>
 
 **What the output showed:** The default credentials failed. As a guest, I saw “This action require super admin rights” when I tried to access uploads.
 
-<img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/8df1329a-badc-4ac5-a5e4-6b4c5931fc39" />
+<img width="1920" height="1080" alt="2" src="https://github.com/user-attachments/assets/d930f8ec-6def-4316-a4e7-98cd6bc704b2" />
 
 
 
@@ -65,9 +65,9 @@ Nmap scan report for <TARGET_IP>
 **What I tried:** While logged in as guest, I inspected account data and browser request state.
 
 **What the output showed:** The account view exposed another account’s Access ID, name, and email. The browser showed user and role cookie fields, and the application later granted super-admin access. The cookie contained user and role fields, visible below.
-<img width="1847" height="403" alt="3" src="https://github.com/user-attachments/assets/f60aeae8-0b01-467c-8d03-376d8baf3697" />
+<img width="1847" height="403" alt="3" src="https://github.com/user-attachments/assets/7cca0450-10bb-46bd-be87-18f7c23f47d0" />
 
-<img width="1920" height="1068" alt="4" src="https://github.com/user-attachments/assets/b1ed701c-c340-4682-8306-f0369304c01a" />
+<img width="1920" height="1068" alt="4" src="https://github.com/user-attachments/assets/2336d107-96bb-407a-ac1d-53acb8a6baa8" />
 
 
 **Why it mattered:** The behavior showed that account data and authorization state were not adequately protected server-side.
@@ -78,7 +78,7 @@ Nmap scan report for <TARGET_IP>
 
 **What the output showed:** The uploads page accepted a file. Gobuster found `/uploads/` as a valid directory.
 
-<img width="1920" height="670" alt="5" src="https://github.com/user-attachments/assets/9ba36fc5-3938-4dd0-8078-75f62dce5c0f" />
+<img width="1920" height="670" alt="5" src="https://github.com/user-attachments/assets/971ef763-acd2-4856-9b42-06800610d33b" />
 
 
 ```text
@@ -86,7 +86,7 @@ gobuster dir -u http://<TARGET_IP>/ -w /usr/share/seclists/Discovery/Web-Content
 uploads  (Status: 301) --> <TARGET_IP>/uploads/
 ```
 
-<img width="1916" height="658" alt="6" src="https://github.com/user-attachments/assets/b16f6f7b-109f-477f-a8f8-178cbf87435b" />
+<img width="1916" height="658" alt="6" src="https://github.com/user-attachments/assets/f41f2998-4de8-4696-972c-ee1ddb90152b" />
 
 
 ```text
