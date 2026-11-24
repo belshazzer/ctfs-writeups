@@ -1,3 +1,5 @@
+<img width="308" height="149" alt="image" src="https://github.com/user-attachments/assets/fee81abe-94cc-4f6a-9c6f-c0526058990c" />
+
 ---
 Title: "Oopsie HTB Walkthrough"
 Date: 24th November 2026
