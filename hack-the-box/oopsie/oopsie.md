@@ -7,8 +7,8 @@ Tags:
   - IDOR
   - file upload
   - privilege escalation
-Platform: "Hack The Box, Starting Point Tier 1"
-Difficulty: "Easy (Starting Point Tier 1)"
+Platform: "Hack The Box, Starting Point Tier 2"
+Difficulty: "Easy (Starting Point Tier 2)"
 ---
 
 <img width="308" height="149" alt="image" src="https://github.com/user-attachments/assets/f1d086a8-29fa-4110-b7fb-f0c372349638" />
